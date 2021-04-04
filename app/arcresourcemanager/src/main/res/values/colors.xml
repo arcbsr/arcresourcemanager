@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dlg_body">#000000</color>
+    <color name="dlg_header">#3C3B3B</color>
+    <color name="dlg_content">#000000</color>
+    <color name="dlg_icon">#FFFFFF</color>
+    <color name="dlg_text">#FFFFFF</color>
+</resources>

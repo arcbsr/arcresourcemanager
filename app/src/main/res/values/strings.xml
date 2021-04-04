@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ResourceManager</string>
+    <string-array name="sizes">
+        <item>Big</item>
+        <item>Normal</item>
+        <item>Small</item>
+        <item>V-Small</item>
+    </string-array>
+</resources>

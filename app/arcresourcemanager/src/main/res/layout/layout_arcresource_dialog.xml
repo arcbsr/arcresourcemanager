@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/dlg_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dlg_body"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/dlg_header"
+
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/dlg_add"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip"
+                android:padding="8dp"
+                android:src="@drawable/ic_shopping_bag"></ImageView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dlg_recycler_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/dlg_close"
+                android:layout_toRightOf="@+id/dlg_add"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/dlg_add"
+                android:background="@color/dlg_content" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/dlg_close"
+                android:background="@color/dlg_content" />
+
+            <ImageView
+                android:id="@+id/dlg_close"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip"
+                android:padding="5dp"
+                android:src="@drawable/res_dlg_close"
+                app:tint="@color/dlg_icon"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="3dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/dlg_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dlg_recycler_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

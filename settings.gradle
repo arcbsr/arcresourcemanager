@@ -1,0 +1,3 @@
+include ':app:arcresourcemanager'
+include ':app'
+rootProject.name = "ResourceManager"
